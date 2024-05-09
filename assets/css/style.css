@@ -26,6 +26,10 @@ body {
     width: 90%;
 }
 
+.prev img {
+    width: 24px;
+}
+
 .prev__button {
     border: none;
 }
@@ -35,7 +39,7 @@ body {
     width: 320px;
     height: 574px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     border-radius: 20px;
     flex-direction: column;
@@ -44,6 +48,7 @@ body {
 .container__form {
     color: var(--primary-color);
     width: 80%;
+    height: 60%;
 }
 
 #container__form-email {
@@ -55,7 +60,8 @@ body {
 }
 
 #container__form-email input {
-    background: url(/assets/img/user.png) no-repeat scroll 7px 7px;
+    background: url(/assets/img/user.png) no-repeat scroll 3px 7px;
+    background-size: 26px;
     background-color: #D9D9D9;
 }
 
@@ -64,7 +70,8 @@ body {
 }
 
 .pwd input {
-    background: url(/assets/img/lock.png) no-repeat scroll 7px 7px;
+    background: url(/assets/img/lock.png) no-repeat scroll 3px 7px;
+    background-size: 26px;
     background-color: #D9D9D9;
 }
 
@@ -76,6 +83,7 @@ body {
     border: none;
     border-radius: 12px;
     margin-top: 5px;
+    outline: none;
 }
 
 .container__button {
@@ -94,6 +102,12 @@ body {
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
+    transition: all .5s ease;
+}
+
+.buttons:hover {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
 .goto-register {
@@ -108,3 +122,60 @@ body {
     font-size: 14px;
 }
 
+@media (min-width: 780px){
+    .logo img {
+        width: 320px;
+    }
+    
+    .container {
+        width: 466px;
+        height: 775px;
+    }
+
+    .container__form {
+        height: 50%;
+    }
+
+    .field {
+        padding-left: 40px;
+        width: 90%;
+        height: 60px;
+    }
+
+    .field::placeholder {
+        font-size: 22px;
+    }
+
+    .prev img {
+        width: 32px;
+    }
+    
+    #container__form-email label, .pwd label {
+        font-size: 20px;
+    }
+    
+    #container__form-email input {
+        background: url(/assets/img/user.png) no-repeat scroll 3px 15px;
+        background-size: 28px;
+        background-color: #D9D9D9;
+    }
+    
+    #container__form-pwd {
+        margin-bottom: 10px;
+    }
+    
+    .pwd input {
+        background: url(/assets/img/lock.png) no-repeat scroll 3px 15px;
+        background-size: 28px;
+        background-color: #D9D9D9;
+    }
+    .buttons {
+        height: 60px;
+    }
+
+    .container__button {
+        margin-top: 40px;
+    }
+    
+    
+}
