@@ -177,5 +177,17 @@ body {
         margin-top: 40px;
     }
     
+    .buttons {
+        font-size: 22px;
+    }
+
+    .goto-register{
+        font-size: 22px;
+    }
+
+    .goto-register a {
+        font-size: 18px;
+        font-weight: bold;
+    }
     
 }
