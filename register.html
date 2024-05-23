@@ -8,34 +8,39 @@
 </head>
 <body>
     <main>
-        <div class="container">
-            <div class="prev">
-                <a class="prev__button" href="#"><img src="/assets/img/seta-esquerda.png" alt=""></a>
-            </div>
-            <div class="logo">
-                <img src="/assets/img/porto-seguro.png" alt="">
-            </div>
-            <form class="container__form">
-                <div id="container__form-email">
-                    <label for="email">E-mail</label>
-                    <input type="email" name="email" placeholder="Insira seu e-mail..." class="field" required>
-                </div>
-                <div id="container__form-pwd" class="pwd">
-                    <label for="password">Senha</label>
-                    <input type="password" name="password" placeholder="Insira sua senha..." class="field" required>
-                </div>
-                <div id="container__form-cnf-pwd" class="pwd">
-                    <label for="cnf-password">Confirmar senha</label>
-                    <input type="password" name="cnf-password" placeholder="Confirme sua senha..." class="field" required>
-                </div>
-                <div class="container__button">
-                    <button id="btn-register" class="buttons" type="submit">REGISTRAR</button>
-                </div>
-            </form>
+        <div id="imgCar">
+            <img src="assets/img/car.png">
         </div>
-        <div class="goto-register">
-            <p>Já possui uma conta? <br> <a href="/login.html">Entrar</a></p>
-        </div>
+        <div class="content">
+            <div class="container">
+                <div class="prev">
+                    <button class="prev__button" onclick="window.history.go(-1); return false;" href="#"><img src="/assets/img/seta-esquerda.png" alt=""></button>
+                </div>
+                <div class="logo">
+                    <img src="/assets/img/porto-seguro.png" alt="">
+                </div>
+                <form class="container__form">
+                    <div id="container__form-email">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" placeholder="Insira seu e-mail..." class="field" required>
+                    </div>
+                    <div id="container__form-pwd" class="pwd">
+                        <label for="password">Senha</label>
+                        <input type="password" name="password" placeholder="Insira sua senha..." class="field" required>
+                    </div>
+                    <div id="container__form-cnf-pwd" class="pwd">
+                        <label for="cnf-password">Confirmar senha</label>
+                        <input type="password" name="cnf-password" placeholder="Confirme sua senha..." class="field" required>
+                    </div>
+                    <div class="container__button">
+                        <button id="btn-register" class="buttons" type="submit">REGISTRAR</button>
+                    </div>
+                </form>
+            </div>
+            <div class="goto-register">
+                <p>Já possui uma conta? <br> <a href="/login.html">Entrar</a></p>
+            </div>
+            </div>
     </main>
 </body>
 </html>

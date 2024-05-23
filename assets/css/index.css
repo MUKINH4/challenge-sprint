@@ -1,0 +1,331 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  border-bottom: 1px solid #000000;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin: 0 10px;
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+#active {
+  background-color: #00c1e0;
+}
+
+.vl {
+  height: 30px;
+  border-right: 1px solid black;
+}
+
+.user-actions {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #00c1e0;
+  border-radius: 5px;
+  width: 80px;
+  height: 50px;
+}
+
+.user-button {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.user-button img,
+.search-button img {
+  width: 20px;
+  height: 20px;
+}
+
+.search-bar {
+  width: 20%;
+}
+
+.search-bar input {
+  width: 100%;
+  outline: none;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid black;
+  background: url(/assets/img/lupa.png) no-repeat scroll 7px 12px;
+  padding-left: 40px;
+  background-size: 26px;
+}
+
+.menuActions {
+  display: flex;
+  align-items: center;
+  position: relative;
+    width: auto;
+}
+
+.menuAction {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.menuAction::before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: -5px;
+  left: -8px;
+  border: 2px solid transparent;
+  border-top: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-bottom-left-radius: 10px;
+  transition: all 0.5s ease;
+}
+
+.menuAction:hover::before {
+  border-color: #50afc1;
+  width: 100%;
+  height: 85%;
+  border-top: 2px solid transparent;
+  border-right: 2px solid transparent;
+}
+
+.menuAction__content {
+  display: inline-block;
+}
+
+/** Formulário */
+.form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.form-item {
+  position: relative;
+  width: 100%;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.form-item__label {
+  position: absolute;
+  top: 15px;
+  left: 7px;
+  transition: all 0.25s ease;
+}
+.form-item__field {
+  width: 100%;
+  display: inline-block;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(80, 175, 193, 0.5);
+  transition: border 0.25s ease;
+  padding: 20px 7px 10px;
+}
+.form-item__field:focus {
+  border-bottom: 1px solid rgba(80, 175, 193, 1);
+}
+.form-item.active .form-item__label {
+  top: 0;
+  font-size: 13px;
+  opacity: 0.5;
+}
+
+/* * Botões */
+.btn {
+  padding: 12px 18px;
+  display: block;
+  font-size: 13px;
+  background: #00c1e0;
+  color: #ffffff;
+  font-weight: 600;
+}
+.btn--block {
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.btn:hover {
+  background: #FFFFFF;
+  color: #00c1e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), 0 5px 9px rgba(0, 0, 0, 0.125);
+}
+
+.menuLogin {
+  position: absolute;
+  right: 10px;
+  top: calc(100% + 12px);
+  z-index: 100;
+  padding: 23px 26px 36px;
+  width: 276px;
+  border-bottom: 5px solid #50afc1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), 0 5px 9px rgba(0, 0, 0, 0.15);
+  background: #FFFFFF;
+}
+.menuLogin__actions {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.menuLogin__action {
+  flex: 0 0 50%;
+  text-align: center;
+  padding: 5px 0;
+  border-bottom: 1px solid transparent;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 11px;
+  transition: all 0.25s ease;
+}
+.menuLogin__action:hover {
+  color: #50afc1;
+  border-bottom-color: #50afc1;
+}
+
+.sect-title {
+  font-weight: 500;
+  font-size: 26px;
+  margin: 20px 0;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d1effe;
+}
+
+.banner-img {
+  flex-grow: 1;
+}
+
+.banner-img img {
+  width: 90%;
+}
+
+.search-button {
+  display: none;
+}
+
+.carousel-item {
+    text-align: center;
+}
+
+.carousel-image {
+    width: 200px;
+}
+
+
+.carousel-control-prev-icon {
+    background-image: url(../img/seta_esquerda.png);
+}
+
+.carousel-control-next-icon {
+    background-image: url(../img/seta_direita.png);
+}
+
+.carousel-indicators li {
+    height: 20px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+}
+
+.carousel-indicators .active {
+    background-color: #00c1e0;
+}
+
+.carousel-indicators {
+    bottom: -50px;
+}
+
+.carousel-caption {
+    position: relative;
+    color: #000;
+    text-align: center;
+    z-index: 0;
+    right: 0;
+    left: 0;
+    
+}
+
+@media screen and (max-width: 780px) {
+  .header {
+    padding: 0;
+  }
+
+  .nav-item {
+    margin: 0 5px;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .search-button {
+    display: block;
+  }
+
+  .vl {
+    margin-left: 10px;
+  }
+
+  .search-bar {
+    display: none;
+  }
+
+  .user-actions span {
+    display: none;
+  }
+
+  .sect-title {
+    font-size: 20px;
+  }
+
+  .banner {
+    flex-direction: column;
+  }
+
+  .banner-img {
+    width: 100%;
+  }
+
+  .banner-img img {
+    width: 100%;
+  }
+
+  .banner-text {
+    text-align: center;
+  }
+}
