@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, #FFC1F5 0%, #FFA4F0 100%);
+    font-family: sans-serif;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+.integrantes-title h2 {
+    font-weight: bold;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.img {
+    width: 60%;
+    border-radius: 30px;
+    border: 1px solid;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.github-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.github-link img {
+    width: 10%;
+    margin-right: 8px;
+
+}
+
+.github-repository {
+    margin-top: 40px;
+}
+
+.github-repository a{
+    background-color: #ee07c7;
+    width: 20%;
+    padding: 20px;
+    border-radius: 30px;
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
