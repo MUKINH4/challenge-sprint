@@ -1,117 +1,280 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/css/index.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/assets/css/index.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header class="header">
-        <div class="logo-container">
-            <img src="assets/img/porto-seguro.png" alt="Porto Seguro Logo" class="logo">
-        </div>
-        <nav class="nav">
-            <a href="#" class="nav-item" id="active">Home</a>
-            <div class="vl"></div>
-            <a href="assistente.html" class="nav-item">Assistente Virtual</a>
-        </nav>
-        <div class="search-bar">
-            <input type="text" placeholder="Buscar..." >
-        </div>
-        <div class="user-actions">
-                <!-- <div class="menuActions">
-                <a href="" class="menuAction loginToggle">  
-                     controlado por js em main.js
-                --> <div class="menuAction__content">
-                        <a href="login.html" class="user-button">
-                            <img src="assets/img/user.png" alt="User Icon">
-                            <span>Login</span>
-                        </a>
-                        <a class="search-button">
-                            <img src="assets/img/lupa.png" alt="Search Icon">
-                        </a>
-                    </div> <!--
-                </a>
-                <div class="menuLogin">
-                    <form action="" class="form">
-                        <label for="menuLogin-email" class="form-item">Usuário
-                            <input type="email" name="email" id="menuLogin-email" required class="form-item__field">
-                        </label>
-                        <label for="menuLogin-senha" class="form-item">Senha
-                            <input type="password" name="senha" id="menuLogin-senha" required class="form-item__field">
-                        </label>
-                        <div class="menuLogin__actions">
-                            <a class="menuLogin__action">Deseja criar a conta?</a>
-                        </div>
-                        <button type="submit" class="btn btn--block">Enviar</button>
-                    </form>
-                </div> -->
-                
-            </div>
-        </div>
+      <div class="logo-container">
+        <img
+          src="assets/img/porto-seguro.png"
+          alt="Porto Seguro Logo"
+          class="logo"
+        />
+      </div>
+      <nav class="nav">
+        <a href="#" class="nav-item" id="active">Home</a>
+        <div class="vl"></div>
+        <a href="assistente.html" class="nav-item">Assistente Virtual</a>
+      </nav>
+      <div class="search-bar">
+        <input type="text" placeholder="Buscar..." />
+      </div>
+      <div class="user-actions">
+        <a href="login.html" class="user-button">
+          <img src="assets/img/user.png" alt="User Icon" />
+          <span>Login</span>
+        </a>
+        <a class="search-button">
+          <img src="assets/img/lupa.png" alt="Search Icon" />
+        </a>
+      </div>
     </header>
     <main>
-        <section>
-            <h1 class="sect-title">Seguro Auto</h1>
-            <div class="banner">
-                <div class="banner-img">
-                    <img src="assets/img/man-driving-car.png" alt="Homem dirigindo um carro">
+      <section>
+        <h1 class="sect-title">Seguro Auto</h1>
+        <div class="banner">
+          <div class="banner-img">
+            <img
+              src="assets/img/man-driving-car.png"
+              alt="Homem dirigindo um carro"
+            />
+          </div>
+          <div class="banner-text">
+            <h2>As melhores coberturas para cuidar do seu auto</h2>
+            <p>
+              Assistência 24 horas, guincho sem limite de km, desconto em
+              estacionamentos e muito mais!
+            </p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h1 class="sect-title">Por que confiar na Porto Seguro?</h1>
+        <div class="container">
+          <div
+            id="carouselBenefits"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-target="#carouselBenefits"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li data-target="#carouselBenefits" data-slide-to="1"></li>
+              <li data-target="#carouselBenefits" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  class="carousel-image"
+                  id="truck-img"
+                  src="assets/img/truck.png"
+                  alt="Primeiro Slide"
+                />
+                <div class="carousel-caption d-md-block">
+                  <h5>Guincho ilimitado 24h</h5>
+                  <p>Guincho 24h, sem limite de quilometrâgem</p>
                 </div>
-                <div class="banner-text">
-                    <h2>As melhores coberturas para cuidar do seu auto</h2>
-                    <p>Assistência 24 horas, guincho sem limite de km, desconto em estacionamentos e muito mais!</p>
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="carousel-image"
+                  id="cancela-img"
+                  src="assets/img/cancela.png"
+                  alt="Segundo Slide"
+                />
+                <div class="carousel-caption d-md-block">
+                  <h5>Desconto para estacionar</h5>
+                  <p>Até 30% de desconto em estacionamentos parceiros</p>
                 </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="carousel-image"
+                  id="wheel-img"
+                  src="assets/img/wheel.png"
+                  alt="Terceiro Slide"
+                />
+                <div class="carousel-caption d-md-block">
+                  <h5>Serviços para veículo</h5>
+                  <p>
+                    Grátis: troca de lâmpadas, diagnóstico e reparo de furo de
+                    pneu nos Centros Automotivos Porto
+                  </p>
+                </div>
+              </div>
             </div>
-        </section>
-        <section>
-            <h1 class="sect-title">Por que confiar na Porto Seguro?</h1>
-            <div class="container">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img class="carousel-image" src="assets/img/truck.png" alt="Primeiro Slide">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Guincho ilimitado 24h</h5>
-                            <p>Guincho 24h, sem limite de quilometrâgem</p>
-                          </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img class="carousel-image" src="assets/img/cancela.png" alt="Segundo Slide">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Desconto para estacionar</h5>
-                            <p>Até 30% de desconto em estacionamentos parceiros</p>
-                          </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img class="carousel-image" src="assets/img/wheel.png" alt="Terceiro Slide">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Serviços para veículo</h5>
-                            <p>Grátis: troca de lâmpadas, diagnóstico e reparo de furo de pneu nos Centros Automotivos Porto</p>
-                          </div>
-                      </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Anterior</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Próximo</span>
-                    </a>
-                  </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselBenefits"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselBenefits"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Próximo</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <h1 class="sect-title" style="text-align: center; font-weight: bold;">
+            Coberturas que você pode contar
+          </h1>
+          <div
+            id="carouselCoverage"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-target="#carouselCoverage"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li data-target="#carouselCoverage" data-slide-to="1"></li>
+              <li data-target="#carouselCoverage" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  class="carousel-image"
+                  src="assets/img/hatchback 2.png"
+                  alt="Primeiro Slide"
+                />
+                <div class="carousel-caption d-md-block">
+                  <h5>Roubo e furto</h5>
+                  <p>
+                    Se o carro for roubado ou furtado, conte com a indenização
+                    total ou parcial
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="carousel-image"
+                  src="assets/img/quebrado 2.png"
+                  alt="Segundo Slide"
+                />
+                <div class="carousel-caption d-md-block">
+                  <h5>Perda total</h5>
+                  <p>
+                    Conte com cobertura de indenização integral, em caso de
+                    perda total do veículo
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="carousel-image"
+                  src="assets/img/ferir 1.png"
+                  alt="Terceiro Slide"
+                />
+                <div class="carousel-caption d-md-block">
+                  <h5>Danos a terceiros</h5>
+                  <p>
+                    Indenização para danos materiais e danos corporais, em casos
+                    de acidentes com terceiros.
+                  </p>
+                </div>
+              </div>
             </div>
-        </section>
+            <a
+              class="carousel-control-prev"
+              href="#carouselCoverage"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselCoverage"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Próximo</span>
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+    <footer>
+        <div class="ftr-sect">
+            <div class="links">
+                <div class="content">
+                    <h2 id="quickly-links-title" class="links-title">Links Rápidos</h2>
+                    <div class="quickly-links">
+                        <a href="#"><img src="assets/img/questionando 1.png" alt="Ícone de perguntas frequentes">Perguntas frequentes</a>
+                        <a href="#"><img src="assets/img/telefone 1.png" alt="Ícone de SAC e Telefones">SAC e Telefones</a>
+                        <a href="#"><img src="assets/img/whatsapp (1) 1.png" alt="Ícone do WhatsApp">WhatsApp</a>
+                        <a href="#"><img src="assets/img/ferramenta 1.png" alt="Ícone para Endereços">Endereços</a>
+                        <a href="#"><img src="assets/img/headset 1.png" alt="Ícone da Ouvidoria">Ouvidoria</a>
+                        <a href="assistente.html"><img src="assets/img/bubble-chat 1.png" alt="Ícone do Chat Online">Chat Online</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h2 id="social-media-title" class="links-title">Redes Sociais</h2>
+                    <div class="social-medias">
+                        <a href="#"><img src="assets/img/instagram 2.png" alt="Ícone do Instagram"></a>
+                        <a href="#"><img src="assets/img/facebook 2.png" alt="Ícone do Facebook"></a>
+                        <a href="#"><img src="assets/img/tik-tok 2.png" alt="Ícone do TikTok"></a>
+                        <a href="#"><img src="assets/img/youtube 2.png" alt="Ícone do YouTube"></a>
+                        <a href="#"><img src="assets/img/linkedin (1) 2.png" alt="Ícone do LinkdIn"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+  </body>
 </html>

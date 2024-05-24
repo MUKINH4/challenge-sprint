@@ -1,29 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="/assets/css/assistente.css">
     <title>Assistente Virtual</title>
 </head>
 <body>
     <header class="header">
         <div class="logo-container">
-            <img src="assets/img/porto-seguro.png" alt="Porto Seguro Logo" class="logo">
+          <img
+            src="assets/img/porto-seguro.png"
+            alt="Porto Seguro Logo"
+            class="logo"
+          />
         </div>
         <nav class="nav">
-            <a href="index.html" class="nav-item">Home</a>
-            <div class="vl"></div>
-            <a href="#" class="nav-item" id="active">Assistente Virtual</a>
+          <a href="index.html" class="nav-item">Home</a>
+          <div class="vl"></div>
+          <a href="assistente.html" class="nav-item" id="active">Assistente Virtual</a>
         </nav>
-        <div class="user-actions">
-            <a href="register.html" class="user-button">
-                <img src="assets/img/user.png" alt="User Icon">
-            </a>
-            <a class="search-button">
-                <img src="assets/img/lupa.png" alt="Search Icon">
-            </a>
+        <div class="search-bar">
+          <input type="text" placeholder="Buscar..." />
         </div>
-    </header>
+        <div class="user-actions">
+          <a href="login.html" class="user-button">
+            <img src="assets/img/user.png" alt="Icone de Usuário" />
+            <span>Login</span>
+          </a>
+          <a class="search-button">
+            <img src="assets/img/lupa.png" alt="Icone de Pesquisa" />
+          </a>
+        </div>
+      </header>
+    <main>
+        <div class="container">
+            <div class="title">
+                <h1>Assistente Virtual</h1>
+            </div>
+            <div class="chat-container">
+                <div class="message bot">
+                    <img src="assets/img/mechanic_shark-removebg-preview.png" alt="Avatar do Bot" class="avatar">
+                    <div class="text">Mensagem do bot aqui</div>
+                </div>
+                <div class="message user">
+                    <img src="assets/img/woman.png" alt="Avatar do Usuário" class="avatar">
+                    <div class="text">Mensagem do usuário aqui</div>
+                </div>
+                <div class="message bot">
+                    <img src="assets/img/mechanic_shark-removebg-preview.png" alt="Avatar do Bot" class="avatar">
+                    <div class="text">Outra mensagem do bot aqui</div>
+                </div>
+            </div>
+            <div class="input-container">
+                <input type="text" placeholder="Digite sua mensagem">
+            </div>
+        </div>
+    </main>
 </body>
 </html>

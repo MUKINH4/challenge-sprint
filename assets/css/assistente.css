@@ -1,0 +1,79 @@
+
+.title {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.title h1{
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    background-color: #00c1e0;
+    margin: 0;
+    padding: 60px;
+    color: white;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-container {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #fff;
+}
+
+.message {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.message.bot .avatar,
+.message.user .avatar {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.message.user {
+    flex-direction: row-reverse;
+}
+
+.message.user .text {
+    background-color: #007BFF;
+    color: white;
+}
+
+.message .text {
+    padding: 10px 15px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    max-width: 60%;
+}
+
+.input-container {
+    padding: 10px;
+    background-color: #e0e0e0;
+    border-top: 1px solid #ccc;
+    background-color: white;
+    
+}
+
+.input-container input {
+    background:  url(../img/keyboard.png) no-repeat left,url(../img/botao-enviar.png) no-repeat right;
+    background-size: 25px;
+    background-position: 
+    left 10px top 5px,
+    right 10px top 5px;
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    box-sizing: border-box;
+    
+}
